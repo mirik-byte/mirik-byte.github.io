@@ -457,7 +457,7 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <!-- ОРИГИНАЛЬНОЕ ИЗОБРАЖЕНИЕ РАБОТЫ -->
-                    <img src="images/Интернет-магазин электроники.png" alt="Интернет-магазин электроники" class="portfolio-img">
+                    <img src="images/Интернет-магазин%20электроники.png" alt="Интернет-магазин электроники" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3>Интернет-магазин электроники</h3>
                         <p>Разработка полнофункционального интернет-магазина с системой управления заказами, корзиной и интеграцией с платежными системами.</p>
@@ -466,7 +466,7 @@
                 </div>
                 <div class="portfolio-item">
                     <!-- ОРИГИНАЛЬНОЕ ИЗОБРАЖЕНИЕ РАБОТЫ -->
-                    <img src="images/Корпоративный портал.png" alt="Корпоративный портал" class="portfolio-img">
+                    <img src="images/Корпоративный%20портал.png" alt="Корпоративный портал" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3>Корпоративный портал</h3>
                         <p>Создание интранет-портала для крупной компании с системой управления документами, календарем и внутренней коммуникацией.</p>
@@ -475,7 +475,7 @@
                 </div>
                 <div class="portfolio-item">
                     <!-- ИСПРАВЛЕННОЕ ИЗОБРАЖЕНИЕ РАБОТЫ -->
-                    <img src="images/Дашборд для аналитики.png" alt="Дашборд для аналитики" class="portfolio-img">
+                    <img src="images/Дашборд%20для%20аналитики.png" alt="Дашборд для аналитики" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3>Дашборд для аналитики</h3>
                         <p>Разработка интерактивного дашборда для визуализации бизнес-показателей с возможностью фильтрации и экспорта данных.</p>
@@ -603,6 +603,18 @@
             
             alert('Сообщение отправлено! Спасибо за ваше обращение.');
             this.reset();
+        });
+
+        // Проверка загрузки изображений
+        document.addEventListener('DOMContentLoaded', function() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                img.onerror = function() {
+                    console.log('Ошибка загрузки изображения:', this.src);
+                    this.style.border = '2px solid red';
+                    this.alt = 'Изображение не найдено: ' + this.alt;
+                };
+            });
         });
     </script>
 </body>
