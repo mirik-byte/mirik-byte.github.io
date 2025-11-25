@@ -185,6 +185,14 @@
             font-size: 0.9rem;
         }
         
+        .custom-icon {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        
         .portfolio {
             background-color: #f5f7fa;
         }
@@ -317,6 +325,13 @@
             font-size: 0.9rem;
         }
         
+        .qr-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: #f8f9fa;
+            margin-top: 40px;
+        }
+        
         @media (max-width: 992px) {
             .about-content, .contact-content {
                 flex-direction: column;
@@ -389,6 +404,7 @@
 
     <section class="hero" id="home">
         <div class="container">
+            <!-- ОРИГИНАЛЬНОЕ ФОТО -->
             <img src="images/photo.jpg" alt="Александр Петров" class="hero-img">
             <h1>Александр Петров</h1>
             <p>Веб-разработчик с 5-летним опытом создания современных и адаптивных веб-приложений. Специализируюсь на фронтенд-разработке с использованием React и Vue.js.</p>
@@ -404,6 +420,20 @@
                     <p>Я профессиональный веб-разработчик с более чем 5-летним опытом работы в индустрии. Начинал свой путь с верстки простых сайтов, а сейчас разрабатываю сложные веб-приложения для крупных компаний.</p>
                     <p>Моя специализация - создание интуитивно понятных пользовательских интерфейсов с акцентом на производительность и доступность. Я постоянно изучаю новые технологии и методологии, чтобы оставаться в курсе последних тенденций веб-разработки.</p>
                     <p>В свободное время я занимаюсь менторством для начинающих разработчиков, участвую в open-source проектах и веду технический блог о веб-разработке.</p>
+
+                    <!-- АДАПТИВНАЯ SVG-ИКОНКА -->
+                    <div class="custom-icon">
+                        <svg width="80" height="80" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="50" cy="50" r="45" fill="#3498db" opacity="0.1"/>
+                            <path d="M30 35 L50 15 L70 35 M30 65 L50 85 L70 65 M35 30 L35 70 M65 30 L65 70" 
+                                  stroke="#3498db" stroke-width="4" stroke-linecap="round" fill="none"/>
+                            <circle cx="50" cy="50" r="8" fill="#3498db"/>
+                        </svg>
+                        <p style="margin-top: 10px; color: #3498db; font-weight: 500; font-size: 14px;">
+                            Адаптивная веб-разработка
+                        </p>
+                    </div>
+
                     <div class="skills">
                         <span class="skill">HTML5</span>
                         <span class="skill">CSS3</span>
@@ -415,7 +445,8 @@
                         <span class="skill">Webpack</span>
                     </div>
                 </div>
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Рабочее место" class="about-img">
+                <!-- ОРИГИНАЛЬНОЕ ФОТО РАБОЧЕГО МЕСТА -->
+                <img src="images/my-workspace.jpg" alt="Мое рабочее место" class="about-img">
             </div>
         </div>
     </section>
@@ -425,7 +456,8 @@
             <h2>Мои работы</h2>
             <div class="portfolio-grid">
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Интернет-магазин" class="portfolio-img">
+                    <!-- ОРИГИНАЛЬНОЕ ИЗОБРАЖЕНИЕ РАБОТЫ -->
+                    <img src="images/Интернет-магазин электроники.png" alt="Интернет-магазин электроники" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3>Интернет-магазин электроники</h3>
                         <p>Разработка полнофункционального интернет-магазина с системой управления заказами, корзиной и интеграцией с платежными системами.</p>
@@ -433,7 +465,8 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Корпоративный сайт" class="portfolio-img">
+                    <!-- ОРИГИНАЛЬНОЕ ИЗОБРАЖЕНИЕ РАБОТЫ -->
+                    <img src="images/Корпоративный портал.png" alt="Корпоративный портал" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3>Корпоративный портал</h3>
                         <p>Создание интранет-портала для крупной компании с системой управления документами, календарем и внутренней коммуникацией.</p>
@@ -441,7 +474,8 @@
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Приложение для аналитики" class="portfolio-img">
+                    <!-- ОРИГИНАЛЬНОЕ ИЗОБРАЖЕНИЕ РАБОТЫ -->
+                    <img src="images/Панель управления для аналитики.png" alt="Панель управления для аналитики" class="portfolio-img">
                     <div class="portfolio-content">
                         <h3>Дашборд для аналитики</h3>
                         <p>Разработка интерактивного дашборда для визуализации бизнес-показателей с возможностью фильтрации и экспорта данных.</p>
@@ -526,6 +560,22 @@
             </div>
         </div>
     </footer>
+
+    <!-- QR-код секция -->
+    <div class="qr-section">
+        <div class="container">
+            <h3>QR-код для быстрого перехода на сайт</h3>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://mirik-byte.github.io/" 
+                 alt="QR Code для сайта" 
+                 style="border: 5px solid white; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            <p style="margin-top: 20px; color: #666; font-size: 14px;">
+                Отсканируйте QR-код для быстрого перехода на сайт с мобильного устройства
+            </p>
+            <p style="color: #3498db; font-weight: 500; margin-top: 10px;">
+                https://mirik-byte.github.io/
+            </p>
+        </div>
+    </div>
 
     <script>
         const menuToggle = document.getElementById('menuToggle');
